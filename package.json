@@ -1,0 +1,20 @@
+{
+  "name": "calc-pkg-size",
+  "version": "1.0.0",
+  "description": "Calculate each package's real size",
+  "author": {
+    "name": "Aiello Chan",
+    "email": "aiello.chan@gmail.com"
+  },
+  "main": "lib.js",
+  "bin": "bin.js",
+  "types": "lib.d.ts",
+  "scripts": {
+    "test": "node ./test/index.test.js"
+  },
+  "dependencies": {
+    "fast-folder-size": "^1.7.1",
+    "fs-extra": "^10.1.0",
+    "pretty-bytes": "^5.6.0"
+  }
+}
