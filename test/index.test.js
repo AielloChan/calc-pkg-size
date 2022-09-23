@@ -16,9 +16,11 @@ async function test() {
   });
   if (
     sizesInfo &&
-    sizesInfo.length === 1 &&
-    sizesInfo[0].size === 6397952 &&
-    sizesInfo[0].pretty === "6.4 MB"
+    sizesInfo.length === 2 &&
+    sizesInfo[0].size === 2727936 &&
+    sizesInfo[0].pretty === "2.73 MB" &&
+    sizesInfo[1].size === 6397952 &&
+    sizesInfo[1].pretty === "6.4 MB"
   ) {
     console.log("✅ Test passed");
   } else {

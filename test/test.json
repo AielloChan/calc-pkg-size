@@ -2,6 +2,7 @@
   "name": "calc-pkg-size-test",
   "private": true,
   "dependencies": {
-    "@unmonorepo/pkg": "1.4.0"
+    "@unmonorepo/pkg": "1.4.0",
+    "calc-pkg-size": "1.0.0"
   }
 }

@@ -119,7 +119,11 @@ async function calcPackageJson({ packageJsonPath, packageJson, command }) {
     return calcPkgSize(name, deps[name], command);
   });
 
-  return await Promise.all(asyncJobs);
+  const result = await Promise.all(asyncJobs);
+
+  const sorted = result.sort((a, b) => (b.size - a.size > 0 ? -1 : 1));
+
+  return sorted;
 }
 
 module.exports = {
