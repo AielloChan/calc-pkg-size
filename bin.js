@@ -7,7 +7,7 @@ const source = require(path.resolve(process.cwd(), "./package.json"));
 
 calcPackageJson({
   packageJson: source,
-  command: "npm install --omit=dev --prefer-offline --no-audit --no-fund",
+  command: "npm install --omit=dev --no-audit --no-fund",
 }).then((result) => {
   console.log(result);
 });
