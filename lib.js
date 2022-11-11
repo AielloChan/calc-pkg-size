@@ -1,3 +1,4 @@
+/// <reference types="./lib.t" />
 // @ts-check
 const os = require("os");
 const path = require("path");

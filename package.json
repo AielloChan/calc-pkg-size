@@ -1,6 +1,6 @@
 {
   "name": "calc-pkg-size",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Calculate each package's real size",
   "author": {
     "name": "Aiello Chan",
@@ -15,6 +15,11 @@
   "dependencies": {
     "fast-folder-size": "^1.7.1",
     "fs-extra": "^10.1.0",
-    "pretty-bytes": "^5.6.0"
+    "minimist": "^1.2.7",
+    "pretty-bytes": "^5.6.0",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9"
   }
 }
