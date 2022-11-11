@@ -17,7 +17,7 @@ const fastFolderSize = require("fast-folder-size");
  */
 async function calcPkgSize(name, version, command = "npm install") {
   const json = {
-    name: `calc-pkg-size-${name}`,
+    name: `calc-pkg-size-${name}`.replace("@", "").replace("/", "-"),
     private: true,
     description: `install ${name} ${version} through ${String(command)}`,
     dependencies: {
