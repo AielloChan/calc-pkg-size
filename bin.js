@@ -29,7 +29,7 @@ function cleanCache() {
  */
 async function calcSize(
   packageJson,
-  command = "npm install --omit=dev --no-audit --no-fund",
+  command = 'yarn --prod --prefer-offline', // or "npm install --omit=dev --no-audit --no-fund"
   output
 ) {
   const result = await calcPackageJson({
